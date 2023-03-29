@@ -10,16 +10,16 @@ class DarwinDevrev < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/darwin-devrev_1.0.3Darwin_arm64.tar.gz"
-      sha256 "61e0ec7ae7977567a99a35e3ed82bb4d945d16d2d5d131fe7798d6ad5be1e671"
+      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Darwin_arm64.tar.gz"
+      sha256 "7393b40cc8de740f09311cc76552bccc1914c34b2e7cac73b700778ac5d8222f"
 
       def install
         bin.install "darwin-devrev"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/darwin-devrev_1.0.3Darwin_x86_64.tar.gz"
-      sha256 "5f7005fd8accffb6e607077be34e11b541fd374add467736b502c841ba176f57"
+      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Darwin_x86_64.tar.gz"
+      sha256 "e0d0a03af25b4a77daa0dd90f472cbedbbac604ae74cdb9f0c5351777e419cfd"
 
       def install
         bin.install "darwin-devrev"
@@ -29,16 +29,16 @@ class DarwinDevrev < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/darwin-devrev_1.0.3Linux_arm64.tar.gz"
-      sha256 "b2575c71270640f1a7da0e76d4f3fdd8d937db1b8a46c983ffba33c41016062c"
+      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Linux_arm64.tar.gz"
+      sha256 "10179acd92d8dc425fa39094d905c2160e6ff8ad3b61cb59e0a2c028bb308959"
 
       def install
         bin.install "darwin-devrev"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/darwin-devrev_1.0.3Linux_x86_64.tar.gz"
-      sha256 "7f8e4f96cb52dd5a98c370483adf1dd34e4bb33e7ae08bea640b531027e2a51a"
+      url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Linux_x86_64.tar.gz"
+      sha256 "a817da297f174fe47c99006745d60eb906b9ef51874cc0702104e633b467bec3"
 
       def install
         bin.install "darwin-devrev"

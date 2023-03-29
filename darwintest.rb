@@ -10,16 +10,16 @@ class Darwintest < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Darwin_arm64.tar.gz"
-      sha256 "2578e5306e8031b9833448d82cf54c49b942bf46c824f856f42fc944dbfa5fa7"
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.2Darwin_arm64.tar.gz"
+      sha256 "4f029ee3ee063cdf528aa37f79100082c81ca242a014d609c3d696ba8cdc54c0"
 
       def install
         bin.install "darwintest"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Darwin_x86_64.tar.gz"
-      sha256 "9bf55c09bfda368cd9d481242f2f1da9e89ef0b4580ba2410e7b501accd45f4b"
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.2Darwin_x86_64.tar.gz"
+      sha256 "11061a89ff418e80cb6653ec37575abcba1eae7e55814103ee5b929ebb4965fc"
 
       def install
         bin.install "darwintest"
@@ -28,17 +28,17 @@ class Darwintest < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Linux_x86_64.tar.gz"
-      sha256 "4a83d1aeba457aae5fcdf5e8a1aa62cff6d64c36b3d0de2b1e04b30d379ba3a3"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.2Linux_arm64.tar.gz"
+      sha256 "1344a5829b0709fcb960ea0a2361ee12a4bac56f2677e924156976f26ac28e9a"
 
       def install
         bin.install "darwintest"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Linux_arm64.tar.gz"
-      sha256 "5f2b2add7e4b9040dc9b0487320738a7f6942dc9c7681cf9422ec09f6a623d47"
+    if Hardware::CPU.intel?
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.2Linux_x86_64.tar.gz"
+      sha256 "252fe12fcc494d98473b6e74c706d46e9c1a36e5c54ae848d8e90fed703db71c"
 
       def install
         bin.install "darwintest"

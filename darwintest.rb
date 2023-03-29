@@ -5,21 +5,21 @@
 class Darwintest < Formula
   desc "The missing man pages for Go binaries"
   homepage "https://github.com/SathishKumarHS/darwin-test"
-  version "0.1.6"
+  version "0.1.7"
   license "BSD-3-Clause"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.6/darwintest_11Darwin_arm64.tar.gz"
-      sha256 "fbed594b5b6b6cc53e0609a74817ebc38972c2dc93f98eae66e19db477ab4217"
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Darwin_arm64.tar.gz"
+      sha256 "2578e5306e8031b9833448d82cf54c49b942bf46c824f856f42fc944dbfa5fa7"
 
       def install
         bin.install "darwintest"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.6/darwintest_11Darwin_x86_64.tar.gz"
-      sha256 "0e565e006d8e40e4a006f7e7dace1157d84bf55d949b1a98c63deb7e798fdc68"
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Darwin_x86_64.tar.gz"
+      sha256 "9bf55c09bfda368cd9d481242f2f1da9e89ef0b4580ba2410e7b501accd45f4b"
 
       def install
         bin.install "darwintest"
@@ -29,16 +29,16 @@ class Darwintest < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.6/darwintest_11Linux_x86_64.tar.gz"
-      sha256 "f58413046f8c541c5b7a9070f346fc3b930d1bd5ffaaf981dcf5c95990f67fc3"
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Linux_x86_64.tar.gz"
+      sha256 "4a83d1aeba457aae5fcdf5e8a1aa62cff6d64c36b3d0de2b1e04b30d379ba3a3"
 
       def install
         bin.install "darwintest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.6/darwintest_11Linux_arm64.tar.gz"
-      sha256 "432fd3d6f799d15e13ab904342a9efb7086732de10013d9e3d558cac4dd153fe"
+      url "https://github.com/SathishKumarHS/darwintest/releases/download/v0.1.7/darwintest_1.0.1Linux_arm64.tar.gz"
+      sha256 "5f2b2add7e4b9040dc9b0487320738a7f6942dc9c7681cf9422ec09f6a623d47"
 
       def install
         bin.install "darwintest"

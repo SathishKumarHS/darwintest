@@ -11,7 +11,7 @@ class Devrev < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Darwin_arm64.tar.gz"
-      sha256 "2d283b3688d68676e7842373747a6cab3fc7266b6742bd9e4d91bc939cb9044c"
+      sha256 "ab28e4476c6835b71dc67255bab811d72cdbe2aade7fa6f8f10e6dd71d1a34bf"
 
       def install
         bin.install "devrev"
@@ -19,7 +19,7 @@ class Devrev < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Darwin_x86_64.tar.gz"
-      sha256 "dadc8bd11676dde0b03d631ee596d86066d87cdf3a8db7fbfbdd0368b975acf3"
+      sha256 "c0b7e4024a80a37921e6ef029dba130286a0e039c512cfca8f8f7b8d1a5680ce"
 
       def install
         bin.install "devrev"
@@ -30,7 +30,7 @@ class Devrev < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Linux_arm64.tar.gz"
-      sha256 "25c900f6b9795106fbee0b5fd951b6424dd0d64a1ac7944547686b0a6b796745"
+      sha256 "3b4225e6177335c6956e8103950a157c44c4db6e01cd6ad5343d9e4b5c8bd132"
 
       def install
         bin.install "devrev"
@@ -38,7 +38,7 @@ class Devrev < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/SathishKumarHS/darwin-devrev/releases/download/v1.0.1/devrev_1.0.3Linux_x86_64.tar.gz"
-      sha256 "e70e09de57cdfa21f238f1a188163156fe01dff1f22bbea00f3d6b65ce129c69"
+      sha256 "5aba068a5737038f20a2556747d56535d4c3d9d11955032099a0b4e6ad014d78"
 
       def install
         bin.install "devrev"
